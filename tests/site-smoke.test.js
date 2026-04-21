@@ -93,14 +93,20 @@ expectIncludes(partner, "partner-murata.html", "cases.html should link to Murata
 expectIncludes(partner, "assets/images/brand/tdk.png", "cases.html should use the local TDK brand image");
 expectIncludes(partner, "assets/images/brand/murata.png", "cases.html should use the local Murata brand image");
 expectIncludes(partner, "assets/images/brand/regular-logo.png", "cases.html should use the local regular logo");
+expectIncludes(partner, "page-hero-grid", "cases.html should use the refined split page hero");
+expectIncludes(partner, "brand-profile", "cases.html should use the brand profile hero variant");
 
 const murata = read("partner-murata.html");
 expectIncludes(murata, "LQG", "partner-murata.html should include Murata series information");
 expectIncludes(murata, "assets/images/series/lqg.png", "partner-murata.html should use local Murata series imagery");
+expectIncludes(murata, "page-hero-grid", "partner-murata.html should use the refined split page hero");
+expectIncludes(murata, "brand-profile", "partner-murata.html should use the brand profile hero variant");
 
 const about = read("about.html");
 expectIncludes(about, "assets/images/banners/about.png", "about.html should use the local about banner");
 expectIncludes(about, "assets/images/brand/regular-logo.png", "about.html should use the local regular logo");
+expectIncludes(about, "page-hero-grid", "about.html should use the refined split page hero");
+expectIncludes(about, "info-panel", "about.html should include a supporting info panel in the hero");
 
 const contact = read("contact.html");
 expectIncludes(contact, "assets/images/banners/contact.jpg", "contact.html should use the local contact banner");
@@ -117,16 +123,22 @@ expectIncludes(inductors, "assets/images/products/inductors.png", "solutions.htm
 expectIncludes(inductors, "assets/images/scenes/module-power.png", "solutions.html should use local module power imagery");
 expectIncludes(inductors, "assets/images/scenes/wireless-charger-module.jpg", "solutions.html should use local wireless charger imagery");
 expectIncludes(inductors, "选型", "solutions.html should include selection guidance");
+expectIncludes(inductors, "page-hero-grid", "solutions.html should use the refined split page hero");
+expectIncludes(inductors, "procurement-panel", "solutions.html should use the procurement hero variant");
 
 const tdk = read("partner-tdk.html");
 expectIncludes(tdk, "assets/images/brand/tdk.png", "partner-tdk.html should use the local TDK brand image");
 expectIncludes(tdk, "assets/images/products/capacitors.png", "partner-tdk.html should use local product imagery");
 expectIncludes(tdk, "assets/images/scenes/car.png", "partner-tdk.html should use local automotive imagery");
 expectIncludes(tdk, "可供应范围", "partner-tdk.html should include supply scope");
+expectIncludes(tdk, "page-hero-grid", "partner-tdk.html should use the refined split page hero");
+expectIncludes(tdk, "brand-profile", "partner-tdk.html should use the brand profile hero variant");
 
 const products = read("products.html");
 expectIncludes(products, "选型导览", "products.html should include selection guidance");
 expectIncludes(products, "系列", "products.html should include series guidance");
+expectIncludes(products, "page-hero-grid", "products.html should use the refined split page hero");
+expectIncludes(products, "procurement-panel", "products.html should use the procurement hero variant");
 
 const tokens = read("assets/css/tokens.css");
 expectIncludes(tokens, "--font-weight-regular", "tokens.css should define regular weight token");
@@ -159,6 +171,10 @@ expectIncludes(styles, ".footer-grid > div", "main.css should enforce spacing in
 expectIncludes(styles, ".lead {", "main.css should define a readable measure for lead paragraphs");
 expectIncludes(styles, ".card h2,", "main.css should refine heading rhythm inside cards");
 expectIncludes(styles, ".mini-card {", "main.css should stabilize the density of compact cards");
+expectIncludes(styles, ".page-hero-grid", "main.css should include split page hero layout styles");
+expectIncludes(styles, ".info-panel", "main.css should include hero support panel styles");
+expectIncludes(styles, ".procurement-panel", "main.css should include procurement hero styles");
+expectIncludes(styles, ".brand-profile", "main.css should include brand profile hero styles");
 expectIncludes(styles, "font-size: var(--font-size-hero);", "main.css should map hero title to the hero token");
 expectIncludes(styles, "font-size: var(--font-size-page-title);", "main.css should map page titles to the page title token");
 expectIncludes(styles, "font-size: var(--font-size-section-title);", "main.css should map section titles to the section title token");
