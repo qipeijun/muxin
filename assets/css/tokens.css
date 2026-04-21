@@ -1,14 +1,14 @@
 :root {
-  --bg: #111318;
-  --bg-soft: #171b22;
-  --panel: rgba(255, 255, 255, 0.06);
-  --panel-strong: rgba(255, 255, 255, 0.1);
-  --line: rgba(255, 255, 255, 0.1);
-  --text: #f5f1e8;
-  --muted: rgba(245, 241, 232, 0.7);
-  --accent: #c99b63;
-  --accent-strong: #ddb27a;
-  --shadow: 0 20px 60px rgba(0, 0, 0, 0.24);
+  --bg: #0d141b;
+  --bg-soft: #121b24;
+  --panel: rgba(255, 255, 255, 0.05);
+  --panel-strong: rgba(255, 255, 255, 0.08);
+  --line: rgba(170, 191, 211, 0.14);
+  --text: #eef3f8;
+  --muted: rgba(238, 243, 248, 0.7);
+  --accent: #7b95ad;
+  --accent-strong: #a2b6c9;
+  --shadow: 0 24px 64px rgba(3, 9, 15, 0.32);
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 14px;
@@ -21,6 +21,18 @@
   --space-6: 3rem;
   --space-7: 4rem;
   --space-8: 6rem;
-  --font-title: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  --font-title: "Avenir Next", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --font-body: "Avenir Next", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-hero: clamp(3.25rem, 4.4vw, 4.5rem);
+  --font-size-page-title: clamp(2.4rem, 3.4vw, 3.25rem);
+  --font-size-section-title: clamp(2rem, 2.6vw, 2.6rem);
+  --font-size-card-title: clamp(1.35rem, 1.8vw, 1.65rem);
+  --font-size-body: 1rem;
+  --font-size-lead: 1.08rem;
+  --font-size-small: 0.875rem;
+  --font-size-overline: 0.75rem;
 }
